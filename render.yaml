@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: l2consulting
+    env: python
+    buildCommand: ""
+    startCommand: "python WebDeploy.py"
