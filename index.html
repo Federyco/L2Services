@@ -6,42 +6,8 @@
   <title>L2 Server Consulting</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Cinzel', serif;
-      background-color: #121212;
-      color: #f0f0f0;
-    }
-    .hero {
-      background: url('images/background.jpg') no-repeat center center;
-      background-size: cover;
-      height: 90vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-    }
-    .hero h1 {
-      font-size: 3.5rem;
-      text-shadow: 2px 2px 10px black;
-    }
-    .section-title {
-      margin-top: 60px;
-      margin-bottom: 20px;
-    }
-    .card {
-      background-color: #1e1e1e;
-      border: 1px solid #444;
-    }
-    footer {
-      background-color: #0d0d0d;
-      padding: 20px;
-      text-align: center;
-      font-size: 0.9rem;
-      margin-top: 60px;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 
@@ -56,6 +22,7 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link active" href="#servicios">Servicios</a></li>
           <li class="nav-item"><a class="nav-link" href="#equipo">El equipo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#acerca">Acerca de nosotros</a></li>
           <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
         </ul>
       </div>
@@ -104,34 +71,52 @@
 
   <!-- Equipo -->
   <section id="equipo" class="container text-center">
-    <h2 class="section-title">Nuestro Equipo</h2>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="card p-3 mb-4">
-          <h5>Recursive</h5>
-          <p>Blanco Federico<br><em>Dev Java Ssr</em></p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card p-3 mb-4">
-          <h5>Kyra</h5>
-          <p>Bera Fernando<br><em>Community Manager</em></p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card p-3 mb-4">
-          <h5>Abaddon</h5>
-          <p>Peralta Gaston<br><em>QA Specialist</em></p>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card p-3 mb-4">
-          <h5>Shinobu</h5>
-          <p>Quito Esteban<br><em>QA Specialist</em></p>
+  <h2 class="section-title">Nuestro Equipo</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-4 d-flex">
+      <div class="card p-3 mb-4 text-white card-hover w-100 d-flex flex-column h-100">
+        <h5>Recursive</h5>
+        <p><em>Dev Sr Java/C#/Python</em></p>
+        <div class="extra-info mt-auto">
+          Más de 10 años creando y optimizando servidores privados. Experto en back-end, seguridad y rendimiento.
         </div>
       </div>
     </div>
-  </section>
+    <div class="col-md-4 d-flex">
+      <div class="card p-3 mb-4 text-white card-hover w-100 d-flex flex-column h-100">
+        <h5>Kyra</h5>
+        <p><em>Community Manager</em></p>
+        <div class="extra-info mt-auto">
+          Estratega en redes sociales y fidelización. Amplia experiencia con comunidades MMO internacionales.
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 d-flex">
+      <div class="card p-3 mb-4 text-white card-hover w-100 d-flex flex-column h-100">
+        <h5>Shinobu</h5>
+        <p><em>QA Specialist</em></p>
+        <div class="extra-info mt-auto">
+          Tester enfocado en sistemas, procesos críticos y reportes detallados.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Sección Acerca de Nosotros -->
+<section id="acerca" class="container">
+  <h2 class="section-title text-center">Acerca de nosotros</h2>
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <div class="card p-4 mb-4 text-white" style="background-color: #1e1e1e; border: 1px solid #444;">
+        <h4 class="mb-3">Kyra – Community Manager</h4>
+        <p>Mi nombre es Bera Fernando Manuel, tengo 34 años y mi experiencia con Lineage II comenzó en el año 2004. Desde entonces, he recorrido una larga trayectoria como jugador, participando activamente desde la crónica C1 hasta H5, y también en las versiones Classic, abarcando desde la 1.5 hasta la 4.0 (Kamael).</p>
+        <p>Entre finales de 2019 y principios de 2024 tuve la oportunidad de ir más allá del rol de jugador para convertirme en parte del staff de distintos servidores. Durante ese período, ocupé diferentes cargos, destacándome como administrador principal en un proyecto propio durante casi dos años, acompañado por un amigo que me brindaba soporte en el área de desarrollo.</p>
+        <p>Esta experiencia me permitió crecer tanto personal como profesionalmente, aprendiendo a gestionar comunidades, atender a los jugadores y comprender sus necesidades según el tipo de servidor. Mi enfoque siempre estuvo puesto en mantener un entorno sano y activo para los usuarios.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <!-- Contacto -->
   <section id="contacto" class="container text-center">
@@ -153,9 +138,22 @@
   </section>
 
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 L2 Server Consulting. Todos los derechos reservados.</p>
-  </footer>
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+  <div class="container">
+    <p class="mb-1">&copy; 2025 Equipo de Consultoría L2 | Todos los derechos reservados</p>
+    <p class="mb-1">
+      Servidores especializados en Lineage II (Crónicas C4 a High Five)
+    </p>
+    <p class="mb-1">
+      Contacto: <a href="mailto:contacto@l2consultora.com" class="text-white">contacto@l2consultora.com</a>
+    </p>
+    <p class="mt-3 small">
+      Todas las imágenes, logos y contenido visual relacionado a Lineage II son propiedad de <strong>NCSoft</strong> y se utilizan con fines ilustrativos sin ánimo de lucro.
+    </p>
+  </div>
+</footer>
+
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
